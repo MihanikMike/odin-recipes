@@ -169,12 +169,5 @@ This project is open source and available for educational purposes.
 - GitHub: [@MihanikMike](https://github.com/MihanikMike)
 - Project: [odin-recipes](https://github.com/MihanikMike/odin-recipes)
 
-## 🙏 Acknowledgments
-
-- Original project from [The Odin Project](https://www.theodinproject.com/)
-- Modernized and redesigned in 2025
-- Built with ❤️ and lots of taste testing
-
----
 
 **Enjoy cooking! 🍳✨**
