@@ -123,26 +123,6 @@ xdg-open index.html
 
 Or simply drag and drop `index.html` into your browser!
 
-## 💡 Key Improvements from Original
-
-### Before (2020)
-- ❌ No CSS styling
-- ❌ Basic HTML structure
-- ❌ No navigation between pages
-- ❌ Not mobile responsive
-- ❌ No interactivity
-- ❌ Multiple typos
-
-### After (2025)
-- ✅ Modern, professional design system
-- ✅ Fully responsive layout
-- ✅ Interactive features (search, theme toggle)
-- ✅ Consistent navigation
-- ✅ Accessibility improvements
-- ✅ Fixed all typos and inconsistencies
-- ✅ Smooth animations and transitions
-- ✅ Professional typography
-- ✅ Dark mode support
 
 ## 🎨 Design System
 
