@@ -1,36 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Recipes 2</title>
-    </head>
-    <body>
-        <h1>Salnom Fillets</h1>
-        <img src="../img/salnom_fillets.jpg">
-        <h2>Description</h2>
-        <p>Fire up succulent blackened salmon with an exciting blend of Cajun-style spices!</p>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>2 tablespoons ground paprika</li>
-            <li>1 tablespoon ground cayenne pepper</li>
-            <li>1 tablespoon onion powder</li>
-            <li>2 teaspoons salt</li>
-            <li>½ teaspoon ground white pepper</li>
-            <li>½ teaspoon ground black pepper</li>
-            <li>¼ teaspoon dried thyme</li>
-            <li>¼ teaspoon dried basil</li>
-            <li>¼ teaspoon dried oregano</li>
-            <li>4 salmon fillets, skin and bones removed</li>
-            <li>½ cup unsalted butter, melted</li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Blackened Salmon Fillets - Fire up succulent salmon with an exciting blend of Cajun-style spices!">
+    <title>Blackened Salmon Fillets | Odin Recipes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">🍳 Odin Recipes</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#recipes">Recipes</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span>🌙</span><span class="theme-text">Dark</span>
+            </button>
+        </div>
+    </header>
 
-        <h2>Steps</h2>
-        <h3>Step 1</h3>
-        <p>Mix paprika, cayenne pepper, onion powder, salt, white and black pepper, thyme, basil, and oregano together in a small bowl.</p>
-        <h3>Step2</h3>
-        <p>Brush salmon fillets on both sides with 1/4 cup butter, and sprinkle evenly with the spice mixture.</p>
-        <h3>Step 3</h3>
-        <p>Heat 2 tablespoons melted butter in a large, heavy skillet over high heat. Add salmon and cook until blackened, 2 to 5 minutes. Lift fillets, add remaining melted butter to the skillet, and flip fillets into the butter. Cook until the other side is blackened and fish flakes easily with a fork, 3 to 5 minutes.</p>
+    <!-- Main Content -->
+    <main class="main-content recipe-detail">
+        <a href="../index.html" class="back-button">
+            <span>←</span> Back to Recipes
+        </a>
 
-    </body>
+        <article>
+            <header class="recipe-header">
+                <h1 class="recipe-title">Blackened Salmon Fillets</h1>
+                
+                <div class="recipe-meta-row">
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">⏱️</span>
+                        <span class="label">Prep Time</span>
+                        <span class="value">10 min</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">🍳</span>
+                        <span class="label">Cook Time</span>
+                        <span class="value">10 min</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">👥</span>
+                        <span class="label">Servings</span>
+                        <span class="value">4</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">🌶️</span>
+                        <span class="label">Difficulty</span>
+                        <span class="value">Easy</span>
+                    </div>
+                </div>
+            </header>
+
+            <img 
+                src="../img/salnom_fillets.jpg" 
+                alt="Blackened Salmon Fillets with Cajun spices"
+                class="recipe-image"
+            >
+
+            <div class="recipe-description">
+                <p>Fire up succulent blackened salmon with an exciting blend of Cajun-style spices! This restaurant-quality dish is crispy on the outside, tender and flaky on the inside. Perfect for a healthy and flavorful dinner.</p>
+            </div>
+
+            <section class="recipe-section">
+                <h2>Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li>2 tablespoons ground paprika</li>
+                    <li>1 tablespoon ground cayenne pepper</li>
+                    <li>1 tablespoon onion powder</li>
+                    <li>2 teaspoons salt</li>
+                    <li>½ teaspoon ground white pepper</li>
+                    <li>½ teaspoon ground black pepper</li>
+                    <li>¼ teaspoon dried thyme</li>
+                    <li>¼ teaspoon dried basil</li>
+                    <li>¼ teaspoon dried oregano</li>
+                    <li>4 salmon fillets, skin and bones removed</li>
+                    <li>½ cup unsalted butter, melted</li>
+                </ul>
+            </section>
+
+            <section class="recipe-section">
+                <h2>Instructions</h2>
+                <ol class="steps-list">
+                    <li>Mix paprika, cayenne pepper, onion powder, salt, white and black pepper, thyme, basil, and oregano together in a small bowl to create your Cajun spice blend.</li>
+                    <li>Brush salmon fillets on both sides with 1/4 cup melted butter, and sprinkle evenly with the spice mixture, pressing gently to adhere.</li>
+                    <li>Heat 2 tablespoons melted butter in a large, heavy skillet over high heat until very hot. Add salmon and cook until blackened, 2 to 5 minutes. Lift fillets, add remaining melted butter to the skillet, and flip fillets into the butter. Cook until the other side is blackened and fish flakes easily with a fork, 3 to 5 minutes. Serve immediately.</li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Odin Recipes</h3>
+                <p>Bringing delicious recipes to home cooks everywhere since 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html#recipes">All Recipes</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Share your cooking creations with us!</p>
+                <p>📧 hello@odinrecipes.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Odin Recipes. Made with ❤️ and lots of taste testing.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+</body>
 </html>

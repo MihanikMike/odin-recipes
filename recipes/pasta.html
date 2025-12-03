@@ -2,49 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Recipes 1</title>
+    <meta name="description" content="Creamy Cajun Chicken Pasta - A Southern inspired recipe with tender chicken, bell peppers, and a rich cream sauce.">
+    <title>Creamy Cajun Chicken Pasta | Odin Recipes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
 </head>
 <body>
-    <h1>Creamy Cajun Chicken Pasta</h1>
-    <img src="../img/chicken_pasta.jpg">
-    <h2>Description</h2>
-    <p>Try this when you are feeling daring and want to mix things up a bit! A Southern inspired recipe that is sure to add a little fun to your dinner table.</p>
-    <p> Try serving it with corn bread</p>
-    <h2>Ingredients</h2>
-    <ul>
-        <li>4 ounces linguine pasta</li>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">🍳 Odin Recipes</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#recipes">Recipes</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span>🌙</span><span class="theme-text">Dark</span>
+            </button>
+        </div>
+    </header>
 
-        <li>2 boneless, skinless chicken breast halves, sliced into thin strips</li>
-        <li>2 teaspoons Cajun seasoning</li>
-        <li>2 tablespoons butter</li>
-        <li>1 green bell pepper, chopped</li>
-        <li>½ red bell pepper, chopped</li>
-        <li>4 fresh mushrooms, sliced</li>
-        <li>1 green onion, minced</li>
-        <li>1 ½ cups heavy cream</li>
-        <li>¼ teaspoon dried basil</li>
-        <li>¼ teaspoon lemon pepper</li>
-        <li>¼ teaspoon salt</li>
-        <li>⅛ teaspoon garlic powder</li>
-        <li>⅛ teaspoon ground black pepper</li>
-        <li>2 tablespoons grated Parmesan cheese</li>
+    <!-- Main Content -->
+    <main class="main-content recipe-detail">
+        <a href="../index.html" class="back-button">
+            <span>←</span> Back to Recipes
+        </a>
 
-    </ul>
-    <h2>Steps</h2>
+        <article>
+            <header class="recipe-header">
+                <h1 class="recipe-title">Creamy Cajun Chicken Pasta</h1>
+                
+                <div class="recipe-meta-row">
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">⏱️</span>
+                        <span class="label">Prep Time</span>
+                        <span class="value">10 min</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">🍳</span>
+                        <span class="label">Cook Time</span>
+                        <span class="value">20 min</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">👥</span>
+                        <span class="label">Servings</span>
+                        <span class="value">4</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">🌶️</span>
+                        <span class="label">Difficulty</span>
+                        <span class="value">Medium</span>
+                    </div>
+                </div>
+            </header>
 
-    <h3>Step 1</h3>
+            <img 
+                src="../img/chicken_pasta.jpg" 
+                alt="Creamy Cajun Chicken Pasta with colorful peppers"
+                class="recipe-image"
+            >
 
-    <p>Bring a large pot of lightly salted water to a boil. Add linguini pasta, and cook for 8 to 10 minutes, or until al dente; drain.</p>
+            <div class="recipe-description">
+                <p>Try this when you are feeling daring and want to mix things up a bit! A Southern inspired recipe that is sure to add a little fun to your dinner table. Try serving it with corn bread for the perfect comfort meal.</p>
+            </div>
 
-    <h3>Step 2</h3>
-    <p>Meanwhile, place chicken and Cajun seasoning in a bowl, and toss to coat.</p>
+            <section class="recipe-section">
+                <h2>Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li>4 ounces linguine pasta</li>
+                    <li>2 boneless, skinless chicken breast halves, sliced into thin strips</li>
+                    <li>2 teaspoons Cajun seasoning</li>
+                    <li>2 tablespoons butter</li>
+                    <li>1 green bell pepper, chopped</li>
+                    <li>½ red bell pepper, chopped</li>
+                    <li>4 fresh mushrooms, sliced</li>
+                    <li>1 green onion, minced</li>
+                    <li>1 ½ cups heavy cream</li>
+                    <li>¼ teaspoon dried basil</li>
+                    <li>¼ teaspoon lemon pepper</li>
+                    <li>¼ teaspoon salt</li>
+                    <li>⅛ teaspoon garlic powder</li>
+                    <li>⅛ teaspoon ground black pepper</li>
+                    <li>2 tablespoons grated Parmesan cheese</li>
+                </ul>
+            </section>
 
-    <h3>Step 3</h3>
-    <p>In a large skillet over medium heat, saute chicken in butter until no longer pink and juices run clear, about 5 to 7 minutes. Add green and red bell peppers, sliced mushrooms and green onions; cook for 2 to 3 minutes. Reduce heat, and stir in heavy cream. Season the sauce with basil, lemon pepper, salt, garlic powder and ground black pepper, and heat through.</p>
-    
-    <h3>Step 4</h3>
-    <p>In a large bowl, toss linguini with sauce. Sprinkle with grated Parmesan cheese.</p>
-    
+            <section class="recipe-section">
+                <h2>Instructions</h2>
+                <ol class="steps-list">
+                    <li>Bring a large pot of lightly salted water to a boil. Add linguini pasta, and cook for 8 to 10 minutes, or until al dente; drain.</li>
+                    <li>Meanwhile, place chicken and Cajun seasoning in a bowl, and toss to coat.</li>
+                    <li>In a large skillet over medium heat, sauté chicken in butter until no longer pink and juices run clear, about 5 to 7 minutes. Add green and red bell peppers, sliced mushrooms and green onions; cook for 2 to 3 minutes. Reduce heat, and stir in heavy cream. Season the sauce with basil, lemon pepper, salt, garlic powder and ground black pepper, and heat through.</li>
+                    <li>In a large bowl, toss linguini with sauce. Sprinkle with grated Parmesan cheese and serve immediately.</li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Odin Recipes</h3>
+                <p>Bringing delicious recipes to home cooks everywhere since 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html#recipes">All Recipes</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Share your cooking creations with us!</p>
+                <p>📧 hello@odinrecipes.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Odin Recipes. Made with ❤️ and lots of taste testing.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
 </body>
 </html>

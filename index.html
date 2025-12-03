@@ -2,21 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Recires Page</title>
+    <meta name="description" content="Discover delicious and easy-to-follow recipes. From breakfast burritos to Cajun pasta and blackened salmon.">
+    <meta name="keywords" content="recipes, cooking, food, dinner, breakfast, easy recipes">
+    <meta name="author" content="Odin Recipes">
+    <title>Odin Recipes - Delicious Home Cooking</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">🍳 Odin Recipes</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span>🌙</span><span class="theme-text">Dark</span>
+            </button>
+        </div>
+    </header>
 
-   <li><a href="recipes/pasta.html">Recipes Titel 1</a></li>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Odin Recipes</h1>
+            <p>Discover delicious recipes that bring joy to your kitchen</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="text" 
+                    id="recipe-search" 
+                    class="search-input" 
+                    placeholder="Search for recipes..."
+                    aria-label="Search recipes"
+                >
+            </div>
+        </div>
+    </section>
 
-   <li><a href="recipes/salmon_fillets.html">Recipes Titel 2</a></li>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="recipes" class="recipes-section">
+            <h2 class="section-title">Featured Recipes</h2>
+            
+            <div class="recipe-grid">
+                <!-- Recipe Card 1: Cajun Chicken Pasta -->
+                <article class="recipe-card" data-category="dinner">
+                    <a href="recipes/pasta.html" aria-label="View Creamy Cajun Chicken Pasta recipe">
+                        <div class="recipe-card-image-container">
+                            <img 
+                                src="img/chicken_pasta.jpg" 
+                                alt="Creamy Cajun Chicken Pasta with bell peppers"
+                                class="recipe-card-image"
+                                loading="lazy"
+                            >
+                            <span class="recipe-card-badge">Dinner</span>
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3 class="recipe-card-title">Creamy Cajun Chicken Pasta</h3>
+                            <p class="recipe-card-description">
+                                A Southern-inspired pasta dish with tender chicken, colorful peppers, and a rich Cajun cream sauce. Perfect for a flavorful dinner!
+                            </p>
+                            <div class="recipe-card-meta">
+                                <span class="recipe-card-meta-item">
+                                    <span>⏱️</span> 30 min
+                                </span>
+                                <span class="recipe-card-meta-item">
+                                    <span>🌶️</span> Spicy
+                                </span>
+                                <span class="recipe-card-meta-item">
+                                    <span>👥</span> 4 servings
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
 
-   <li><a href="recipes/burrito.html">Recipes Titel 3</a></li>
+                <!-- Recipe Card 2: Blackened Salmon -->
+                <article class="recipe-card" data-category="dinner">
+                    <a href="recipes/salmon_fillets.html" aria-label="View Blackened Salmon Fillets recipe">
+                        <div class="recipe-card-image-container">
+                            <img 
+                                src="img/salnom_fillets.jpg" 
+                                alt="Blackened Salmon Fillets with Cajun spices"
+                                class="recipe-card-image"
+                                loading="lazy"
+                            >
+                            <span class="recipe-card-badge">Dinner</span>
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3 class="recipe-card-title">Blackened Salmon Fillets</h3>
+                            <p class="recipe-card-description">
+                                Fire up succulent salmon with an exciting blend of Cajun-style spices! Crispy on the outside, tender inside.
+                            </p>
+                            <div class="recipe-card-meta">
+                                <span class="recipe-card-meta-item">
+                                    <span>⏱️</span> 20 min
+                                </span>
+                                <span class="recipe-card-meta-item">
+                                    <span>🌶️</span> Spicy
+                                </span>
+                                <span class="recipe-card-meta-item">
+                                    <span>👥</span> 4 servings
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
 
-    </ul>
+                <!-- Recipe Card 3: Breakfast Burrito -->
+                <article class="recipe-card" data-category="breakfast">
+                    <a href="recipes/burrito.html" aria-label="View Mini Breakfast Burrito recipe">
+                        <div class="recipe-card-image-container">
+                            <img 
+                                src="img/burrito.jpg" 
+                                alt="Mini Breakfast Burrito with eggs and cheese"
+                                class="recipe-card-image"
+                                loading="lazy"
+                            >
+                            <span class="recipe-card-badge">Breakfast</span>
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3 class="recipe-card-title">Mini Breakfast Burrito</h3>
+                            <p class="recipe-card-description">
+                                A fast DIY breakfast for busy mornings! Quick to make in the microwave with eggs, salsa, and cheese wrapped in a warm tortilla.
+                            </p>
+                            <div class="recipe-card-meta">
+                                <span class="recipe-card-meta-item">
+                                    <span>⏱️</span> 5 min
+                                </span>
+                                <span class="recipe-card-meta-item">
+                                    <span>🥚</span> Easy
+                                </span>
+                                <span class="recipe-card-meta-item">
+                                    <span>👥</span> 1 serving
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
 
+        <!-- About Section -->
+        <section id="about" class="recipe-section">
+            <h2>About Odin Recipes</h2>
+            <p>Welcome to Odin Recipes, your go-to destination for delicious, easy-to-follow recipes. Whether you're looking for a quick breakfast, a hearty dinner, or something special for the weekend, we've got you covered.</p>
+            <p>Our recipes are carefully curated and tested to ensure they work perfectly every time. From beginners to experienced cooks, everyone can find something to love here.</p>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Odin Recipes</h3>
+                <p>Bringing delicious recipes to home cooks everywhere since 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#recipes">All Recipes</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="contact">
+                <h3>Connect</h3>
+                <p>Share your cooking creations with us!</p>
+                <p>📧 hello@odinrecipes.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Odin Recipes. Made with ❤️ and lots of taste testing.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

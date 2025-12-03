@@ -2,29 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Recipes 3</title>
+    <meta name="description" content="Mini Breakfast Burrito - A fast DIY breakfast perfect for busy mornings on the go.">
+    <title>Mini Breakfast Burrito | Odin Recipes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
 </head>
 <body>
-    <h1>Mini Breakfast Burrito</h1>
-    <img src="../img/burrito.jpg">
-    <h2>Description</h2>
-    <p>A fast DIY breakfast for the road.</p>
-    <h2>Ingredients</h2>
-    <ul>
-        <li>2 eggs</li>
-        <li>2 tablespoons salsa</li>
-        <li>1 slice reduced-fat American cheese</li>
-        <li>1 tortilla</li>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">🍳 Odin Recipes</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#recipes">Recipes</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span>🌙</span><span class="theme-text">Dark</span>
+            </button>
+        </div>
+    </header>
 
-    </ul>
-    <h2>Steps</h2>
-    <h3>Step1</h3>
-    <p>Spray a cereal bowl with nonstick cooking spray. Crack the eggs into the bowl, add the salsa, and stir. Microwave on high for 1 minute, stir, and cook for another minute or until the mixture firms up.</p>
+    <!-- Main Content -->
+    <main class="main-content recipe-detail">
+        <a href="../index.html" class="back-button">
+            <span>←</span> Back to Recipes
+        </a>
 
-    <h3>Srep2</h3>
-    <p>Place the cheese in the center of the tortilla and top it with the egg mixture. Wrap it all up like a burrito and head for the car.</p>
+        <article>
+            <header class="recipe-header">
+                <h1 class="recipe-title">Mini Breakfast Burrito</h1>
+                
+                <div class="recipe-meta-row">
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">⏱️</span>
+                        <span class="label">Prep Time</span>
+                        <span class="value">2 min</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">🍳</span>
+                        <span class="label">Cook Time</span>
+                        <span class="value">3 min</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">👥</span>
+                        <span class="label">Servings</span>
+                        <span class="value">1</span>
+                    </div>
+                    <div class="recipe-meta-item-large">
+                        <span class="icon">🥚</span>
+                        <span class="label">Difficulty</span>
+                        <span class="value">Easy</span>
+                    </div>
+                </div>
+            </header>
 
-    
+            <img 
+                src="../img/burrito.jpg" 
+                alt="Mini Breakfast Burrito with eggs, cheese, and salsa"
+                class="recipe-image"
+            >
+
+            <div class="recipe-description">
+                <p>A fast DIY breakfast perfect for busy mornings! This microwaveable burrito is quick to make and easy to eat on the go. With just a few simple ingredients, you'll have a satisfying breakfast in minutes.</p>
+            </div>
+
+            <section class="recipe-section">
+                <h2>Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li>2 eggs</li>
+                    <li>2 tablespoons salsa</li>
+                    <li>1 slice reduced-fat American cheese</li>
+                    <li>1 flour tortilla</li>
+                    <li>Nonstick cooking spray</li>
+                </ul>
+            </section>
+
+            <section class="recipe-section">
+                <h2>Instructions</h2>
+                <ol class="steps-list">
+                    <li>Spray a microwave-safe cereal bowl with nonstick cooking spray. Crack the eggs into the bowl, add the salsa, and stir well to combine.</li>
+                    <li>Microwave on high for 1 minute, stir, and cook for another minute or until the egg mixture firms up and is fully cooked.</li>
+                    <li>Place the cheese slice in the center of the tortilla and top it with the hot egg mixture. Wrap it all up like a burrito, folding in the sides first, then rolling tightly. Enjoy immediately or wrap in foil for the road!</li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Odin Recipes</h3>
+                <p>Bringing delicious recipes to home cooks everywhere since 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html#recipes">All Recipes</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Share your cooking creations with us!</p>
+                <p>📧 hello@odinrecipes.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Odin Recipes. Made with ❤️ and lots of taste testing.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
 </body>
 </html>
